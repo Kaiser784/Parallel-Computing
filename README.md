@@ -15,3 +15,5 @@
 
 ---
 ## Week-2
+1. Matrix Addition for given n x n double precision floating point numbers.
+2. Matrix Multiplication for given n x n double precision floating point numbers.
