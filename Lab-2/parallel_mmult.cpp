@@ -34,7 +34,7 @@ int main()
 
     exec = end - start;
 
-    printf("Serial Exec time - %f\n", exec);
+    printf("Parallel Exec time - %f\n", exec);
 
     return 0;
 }
