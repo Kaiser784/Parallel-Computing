@@ -12,7 +12,7 @@ int main()
     int i;
 
     start = omp_get_wtime();
-    #pragma omp parallel private(i) shared(a, b, c)
+    #pragma omp parallel private(j) shared(c)
     {   
         #pragma omp for
         for (i = 0; i < SIZE; i++)
