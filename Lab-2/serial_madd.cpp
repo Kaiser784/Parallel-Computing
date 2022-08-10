@@ -3,30 +3,29 @@
 #include <omp.h>
 #include <time.h>
 
-#define SIZE 100000
+#define SIZE 100
 
 int main()
 {
-    double a[SIZE], b[SIZE], c[SIZE], rand_a, rand_b;
+    double a[SIZE][SIZE], b[SIZE][SIZE], c[SIZE][SIZE], rand_a, rand_b;
     double start, end, exec;
-    int i;
 
     start = omp_get_wtime();
-    #pragma omp parallel private(j) shared(a, b, c)
+
+    for (int i = 0; i < SIZE; i++)
     {   
-        #pragma omp for
-        for (i = 0; i < SIZE; i++)
+        for(int j = 0; j < SIZE; j++)
         {
             rand_a = rand();
             rand_b = rand();
 
-            a[i] = i*rand_a;
-            b[i] = i*rand_b;
+            a[i][j] = i*rand_a;
+            b[i][j] = i*rand_b;
             
-            for(int j = 1; j < SIZE; j++)
-            c[i] = a[i] * b[i];
+            c[i][j] = a[i][j] + b[i][j];
         }
     }
+
     end = omp_get_wtime();
 
     exec = end - start;
