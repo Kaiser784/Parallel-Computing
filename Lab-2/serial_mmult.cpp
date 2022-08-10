@@ -27,7 +27,6 @@ int main()
     }
 
     end = omp_get_wtime();
-
     exec = end - start;
 
     printf("Serial Exec time - %f\n", exec);
