@@ -3,7 +3,7 @@
 #include <omp.h>
 #include <time.h>
 
-#define SIZE 100000
+#define SIZE 100
 
 int main()
 {
@@ -12,7 +12,7 @@ int main()
     int i;
 
     start = omp_get_wtime();
-    #pragma omp parallel private(j) shared(c)
+    #pragma omp parallel shared(c)
     {   
         #pragma omp for
         for (i = 0; i < SIZE; i++)
@@ -23,7 +23,6 @@ int main()
             a[i] = i*rand_a;
             b[i] = i*rand_b;
             
-            for(int j = 1; j < SIZE; j++)
             c[i] = a[i] + b[i];
         }
     }
@@ -31,7 +30,7 @@ int main()
 
     exec = end - start;
 
-    printf("Serial Exec time - %f\n", exec);
+    printf("Parallel Exec time - %f\n", exec);
 
     return 0;
 }
