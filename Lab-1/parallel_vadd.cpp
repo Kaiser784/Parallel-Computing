@@ -3,7 +3,7 @@
 #include <omp.h>
 #include <time.h>
 
-#define SIZE 100
+#define SIZE 100000
 
 int main()
 {
@@ -12,8 +12,11 @@ int main()
     int i;
 
     start = omp_get_wtime();
+    int thread;
+
     #pragma omp parallel shared(c)
     {   
+        thread = omp_get_num_threads();
         #pragma omp for
         for (i = 0; i < SIZE; i++)
         {
@@ -30,7 +33,7 @@ int main()
 
     exec = end - start;
 
-    printf("Parallel Exec time - %f\n", exec);
+    printf("%d, %f\n", thread, exec);
 
     return 0;
 }

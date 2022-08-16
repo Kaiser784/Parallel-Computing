@@ -20,7 +20,6 @@ int main()
         a[i] = i*rand_a;
         b[i] = i*rand_b;
         
-        for(int j = 1; j < SIZE; j++)
         c[i] = a[i] + b[i];
     }
 

@@ -22,6 +22,7 @@ int main()
             a[i][j] = i*rand_a;
             b[i][j] = i*rand_b;
             
+            for(int k = 0; k < 100000; k++)
             c[i][j] = a[i][j] + b[i][j];
         }
     }

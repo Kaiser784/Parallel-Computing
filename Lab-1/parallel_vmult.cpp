@@ -12,8 +12,11 @@ int main()
     int i;
 
     start = omp_get_wtime();
+    int thread;
+
     #pragma omp parallel shared(c)
     {   
+        thread = omp_get_num_threads();
         #pragma omp for
         for (i = 0; i < SIZE; i++)
         {
@@ -23,6 +26,7 @@ int main()
             a[i] = i*rand_a;
             b[i] = i*rand_b;
             
+            for (int j = 0; j < SIZE; j++)
             c[i] = a[i] * b[i];
         }
     }
@@ -30,7 +34,7 @@ int main()
 
     exec = end - start;
 
-    printf("Parallel Exec time - %f\n", exec);
+    printf("%d, %f\n", thread, exec);
 
     return 0;
 }
