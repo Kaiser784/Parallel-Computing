@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 	// Checking the number of input has to be passed by the user
 	if (argc != 2)
     {
-        printf("Usuage: ./<executable> <input_file>\n");
+        printf("Usage: ./<executable> <msg_file>\n");
         return -1;
     }
 
