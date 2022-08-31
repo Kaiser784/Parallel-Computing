@@ -1,0 +1,730 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 76.41     23.76    23.76 12609306     0.00     0.00  LongNumbers::Sub(LongNumbers::BigNum, LongNumbers::BigNum)
+ 12.54     27.66     3.90 13075598     0.00     0.00  LongNumbers::CopyOf(LongNumbers::BigNum)
+  4.28     28.99     1.33     2579     0.00     0.00  LongNumbers::Mul(LongNumbers::BigNum, LongNumbers::BigNum)
+  3.38     30.04     1.05   233990     0.00     0.00  LongNumbers::DivSmall(LongNumbers::BigNum, LongNumbers::BigNum)
+  1.45     30.49     0.45  1033175     0.00     0.00  LongNumbers::Add(LongNumbers::BigNum, LongNumbers::BigNum)
+  0.93     30.79     0.29 28469824     0.00     0.00  LongNumbers::EqualZero(LongNumbers::BigNum)
+  0.61     30.98     0.19   478950     0.00     0.00  LongNumbers::AddFront(LongNumbers::BigNum, int)
+  0.42     31.11     0.13     1550     0.00     0.02  LongNumbers::DivLarge(LongNumbers::BigNum, LongNumbers::BigNum)
+  0.00     31.11     0.00   719334     0.00     0.00  std::remove_reference<int&>::type&& std::move<int&>(int&)
+  0.00     31.11     0.00   239778     0.00     0.00  std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<int> >, std::is_move_constructible<int>, std::is_move_assignable<int> >::value, void>::type std::swap<int>(int&, int&)
+  0.00     31.11     0.00   239778     0.00     0.00  void std::iter_swap<int*, int*>(int*, int*)
+  0.00     31.11     0.00     6124     0.00     0.00  std::__deque_buf_size(unsigned long)
+  0.00     31.11     0.00     4086     0.00     0.00  std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_S_buffer_size()
+  0.00     31.11     0.00     3069     0.00     0.00  std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_M_set_node(LongNumbers::ArrayOfArray**)
+  0.00     31.11     0.00     3051     0.00     0.00  LongNumbers::ArrayOfArray const& std::forward<LongNumbers::ArrayOfArray const&>(std::remove_reference<LongNumbers::ArrayOfArray const&>::type&)
+  0.00     31.11     0.00     2035     0.00     0.00  __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::_M_max_size() const
+  0.00     31.11     0.00     1557     0.00     0.00  std::iterator_traits<int*>::iterator_category std::__iterator_category<int*>(int* const&)
+  0.00     31.11     0.00     1557     0.00     0.00  int* std::end<int, 309ul>(int (&) [309ul])
+  0.00     31.11     0.00     1557     0.00     0.00  int* std::begin<int, 309ul>(int (&) [309ul])
+  0.00     31.11     0.00     1557     0.00     0.00  void std::reverse<int*>(int*, int*)
+  0.00     31.11     0.00     1557     0.00     0.00  void std::__reverse<int*>(int*, int*, std::random_access_iterator_tag)
+  0.00     31.11     0.00     1035     0.00     0.00  std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_get_Tp_allocator() const
+  0.00     31.11     0.00     1019     0.00     0.00  std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_Deque_iterator(std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*> const&)
+  0.00     31.11     0.00     1018     0.00     0.00  __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::deallocate(LongNumbers::ArrayOfArray*, unsigned long)
+  0.00     31.11     0.00     1018     0.00     0.00  __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::allocate(unsigned long, void const*)
+  0.00     31.11     0.00     1018     0.00     0.00  std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_allocate_node()
+  0.00     31.11     0.00     1018     0.00     0.00  std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_deallocate_node(LongNumbers::ArrayOfArray*)
+  0.00     31.11     0.00     1018     0.00     0.00  std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_get_Tp_allocator()
+  0.00     31.11     0.00     1018     0.00     0.00  std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::deallocate(std::allocator<LongNumbers::ArrayOfArray>&, LongNumbers::ArrayOfArray*, unsigned long)
+  0.00     31.11     0.00     1018     0.00     0.00  std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::allocate(std::allocator<LongNumbers::ArrayOfArray>&, unsigned long)
+  0.00     31.11     0.00     1018     0.00     0.00  std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::end()
+  0.00     31.11     0.00     1017     0.00     0.00  void __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::destroy<LongNumbers::ArrayOfArray>(LongNumbers::ArrayOfArray*)
+  0.00     31.11     0.00     1017     0.00     0.00  void __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::construct<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray const&>(LongNumbers::ArrayOfArray*, LongNumbers::ArrayOfArray const&)
+  0.00     31.11     0.00     1017     0.00     0.00  __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::max_size() const
+  0.00     31.11     0.00     1017     0.00     0.00  std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::operator*() const
+  0.00     31.11     0.00     1017     0.00     0.00  std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::size() const
+  0.00     31.11     0.00     1017     0.00     0.00  std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::max_size() const
+  0.00     31.11     0.00     1017     0.00     0.00  std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::operator--()
+  0.00     31.11     0.00     1017     0.00     0.00  void std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::destroy<LongNumbers::ArrayOfArray>(std::allocator<LongNumbers::ArrayOfArray>&, LongNumbers::ArrayOfArray*)
+  0.00     31.11     0.00     1017     0.00     0.00  std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::max_size(std::allocator<LongNumbers::ArrayOfArray> const&)
+  0.00     31.11     0.00     1017     0.00     0.00  void std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::construct<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray const&>(std::allocator<LongNumbers::ArrayOfArray>&, LongNumbers::ArrayOfArray*, LongNumbers::ArrayOfArray const&)
+  0.00     31.11     0.00     1017     0.00     0.00  std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_S_max_size(std::allocator<LongNumbers::ArrayOfArray> const&)
+  0.00     31.11     0.00     1017     0.00     0.00  std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_pop_back_aux()
+  0.00     31.11     0.00     1017     0.00     0.00  void std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_push_back_aux<LongNumbers::ArrayOfArray const&>(LongNumbers::ArrayOfArray const&)
+  0.00     31.11     0.00     1017     0.00     0.00  std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_reserve_map_at_back(unsigned long)
+  0.00     31.11     0.00     1017     0.00     0.00  std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::back()
+  0.00     31.11     0.00     1017     0.00     0.00  std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::pop_back()
+  0.00     31.11     0.00     1017     0.00     0.00  std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::push_back(LongNumbers::ArrayOfArray const&)
+  0.00     31.11     0.00     1017     0.00     0.00  std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::pop()
+  0.00     31.11     0.00     1017     0.00     0.00  std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::top()
+  0.00     31.11     0.00     1017     0.00     0.00  std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::push(LongNumbers::ArrayOfArray const&)
+  0.00     31.11     0.00     1017     0.00     0.00  unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00     31.11     0.00     1017     0.00     0.00  std::operator-(std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*> const&, std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*> const&)
+  0.00     31.11     0.00     1017     0.00     0.00  operator new(unsigned long, void*)
+  0.00     31.11     0.00      924     0.00     0.00  std::remove_reference<char&>::type&& std::move<char&>(char&)
+  0.00     31.11     0.00      632     0.00     0.00  __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::base() const
+  0.00     31.11     0.00      616     0.00     0.00  __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator*() const
+  0.00     31.11     0.00      312     0.00     0.00  __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator--()
+  0.00     31.11     0.00      312     0.00     0.00  bool __gnu_cxx::operator< <char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&)
+  0.00     31.11     0.00      308     0.00     0.00  __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator++()
+  0.00     31.11     0.00      308     0.00     0.00  std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<char> >, std::is_move_constructible<char>, std::is_move_assignable<char> >::value, void>::type std::swap<char>(char&, char&)
+  0.00     31.11     0.00      308     0.00     0.00  void std::iter_swap<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >)
+  0.00     31.11     0.00       24     0.00     0.00  LongNumbers::ArrayOfArray** std::__niter_base<LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**)
+  0.00     31.11     0.00       18     0.00     0.00  __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray*>::new_allocator()
+  0.00     31.11     0.00       18     0.00     0.00  __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray*>::~new_allocator()
+  0.00     31.11     0.00       18     0.00     0.00  std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_get_map_allocator() const
+  0.00     31.11     0.00       18     0.00     0.00  std::allocator<LongNumbers::ArrayOfArray*>::allocator<LongNumbers::ArrayOfArray>(std::allocator<LongNumbers::ArrayOfArray> const&)
+  0.00     31.11     0.00       18     0.00     0.00  std::allocator<LongNumbers::ArrayOfArray*>::~allocator()
+  0.00     31.11     0.00       16     0.00     0.00  LongNumbers::ArrayOfArray** std::__miter_base<LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**)
+  0.00     31.11     0.00        9     0.00     0.00  __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray*>::deallocate(LongNumbers::ArrayOfArray**, unsigned long)
+  0.00     31.11     0.00        9     0.00     0.00  __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray*>::allocate(unsigned long, void const*)
+  0.00     31.11     0.00        9     0.00     0.00  __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray*>::_M_max_size() const
+  0.00     31.11     0.00        9     0.00     0.00  std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_allocate_map(unsigned long)
+  0.00     31.11     0.00        9     0.00     0.00  std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_deallocate_map(LongNumbers::ArrayOfArray**, unsigned long)
+  0.00     31.11     0.00        9     0.00     0.00  std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray*> >::deallocate(std::allocator<LongNumbers::ArrayOfArray*>&, LongNumbers::ArrayOfArray**, unsigned long)
+  0.00     31.11     0.00        9     0.00     0.00  std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray*> >::allocate(std::allocator<LongNumbers::ArrayOfArray*>&, unsigned long)
+  0.00     31.11     0.00        9     0.00     0.00  unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00     31.11     0.00        8     0.00     0.00  LongNumbers::ArrayOfArray** std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<LongNumbers::ArrayOfArray*>(LongNumbers::ArrayOfArray* const*, LongNumbers::ArrayOfArray* const*, LongNumbers::ArrayOfArray**)
+  0.00     31.11     0.00        8     0.00     0.00  std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_reallocate_map(unsigned long, bool)
+  0.00     31.11     0.00        8     0.00     0.00  LongNumbers::ArrayOfArray** std::__niter_wrap<LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray** const&, LongNumbers::ArrayOfArray**)
+  0.00     31.11     0.00        8     0.00     0.00  LongNumbers::ArrayOfArray** std::__copy_move_a<false, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**)
+  0.00     31.11     0.00        8     0.00     0.00  LongNumbers::ArrayOfArray** std::__copy_move_a1<false, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**)
+  0.00     31.11     0.00        8     0.00     0.00  LongNumbers::ArrayOfArray** std::__copy_move_a2<false, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**)
+  0.00     31.11     0.00        8     0.00     0.00  LongNumbers::ArrayOfArray** std::copy<LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**)
+  0.00     31.11     0.00        7     0.00     0.00  LongNumbers::ToPrint[abi:cxx11](LongNumbers::BigNum)
+  0.00     31.11     0.00        4     0.00     0.00  LongNumbers::StringToArray(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+  0.00     31.11     0.00        4     0.00     0.00  bool __gnu_cxx::operator==<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&)
+  0.00     31.11     0.00        4     0.00     0.00  std::iterator_traits<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::iterator_category std::__iterator_category<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&)
+  0.00     31.11     0.00        4     0.00     0.00  decltype (({parm#1}.end)()) std::end<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+  0.00     31.11     0.00        4     0.00     0.00  decltype (({parm#1}.begin)()) std::begin<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+  0.00     31.11     0.00        4     0.00     0.00  void std::reverse<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >)
+  0.00     31.11     0.00        4     0.00     0.00  void std::__reverse<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::random_access_iterator_tag)
+  0.00     31.11     0.00        2     0.00     0.00  std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_Deque_iterator()
+  0.00     31.11     0.00        1     0.00     0.00  _GLOBAL__sub_I_main
+  0.00     31.11     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00     31.11     0.00        1     0.00     0.00  LongNumbers::BigNum::BigNum()
+  0.00     31.11     0.00        1     0.00    30.90  LongNumbers::PwrMod(LongNumbers::BigNum, LongNumbers::BigNum, LongNumbers::BigNum)
+  0.00     31.11     0.00        1     0.00     0.20  LongNumbers::Inverse(LongNumbers::BigNum, LongNumbers::BigNum)
+  0.00     31.11     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::new_allocator()
+  0.00     31.11     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::~new_allocator()
+  0.00     31.11     0.00        1     0.00     0.00  std::allocator<LongNumbers::ArrayOfArray>::allocator()
+  0.00     31.11     0.00        1     0.00     0.00  std::allocator<LongNumbers::ArrayOfArray>::~allocator()
+  0.00     31.11     0.00        1     0.00     0.00  std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_Deque_impl::_Deque_impl()
+  0.00     31.11     0.00        1     0.00     0.00  std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_Deque_impl::~_Deque_impl()
+  0.00     31.11     0.00        1     0.00     0.00  std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_create_nodes(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**)
+  0.00     31.11     0.00        1     0.00     0.00  std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_Deque_impl_data::_Deque_impl_data()
+  0.00     31.11     0.00        1     0.00     0.00  std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_destroy_nodes(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**)
+  0.00     31.11     0.00        1     0.00     0.00  std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_initialize_map(unsigned long)
+  0.00     31.11     0.00        1     0.00     0.00  std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_Deque_base()
+  0.00     31.11     0.00        1     0.00     0.00  std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::~_Deque_base()
+  0.00     31.11     0.00        1     0.00     0.00  std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_destroy_data(std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>, std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>, std::allocator<LongNumbers::ArrayOfArray> const&)
+  0.00     31.11     0.00        1     0.00     0.00  std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::begin()
+  0.00     31.11     0.00        1     0.00     0.00  std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::deque()
+  0.00     31.11     0.00        1     0.00     0.00  std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::~deque()
+  0.00     31.11     0.00        1     0.00     0.00  std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::stack<std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >, void>()
+  0.00     31.11     0.00        1     0.00     0.00  std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::~stack()
+
+			Call graph
+
+
+granularity: each sample hit covers 2 byte(s) for 0.03% of 31.11 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00   31.11                 main [1]
+                0.00   30.90       1/1           LongNumbers::PwrMod(LongNumbers::BigNum, LongNumbers::BigNum, LongNumbers::BigNum) [2]
+                0.00    0.20       1/1           LongNumbers::Inverse(LongNumbers::BigNum, LongNumbers::BigNum) [11]
+                0.00    0.00       2/2579        LongNumbers::Mul(LongNumbers::BigNum, LongNumbers::BigNum) [8]
+                0.00    0.00       2/13408482     LongNumbers::Sub(LongNumbers::BigNum, LongNumbers::BigNum) <cycle 1> [5]
+                0.00    0.00       7/7           LongNumbers::ToPrint[abi:cxx11](LongNumbers::BigNum) [95]
+                0.00    0.00       4/4           LongNumbers::StringToArray(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [96]
+-----------------------------------------------
+                0.00   30.90       1/1           main [1]
+[2]     99.3    0.00   30.90       1         LongNumbers::PwrMod(LongNumbers::BigNum, LongNumbers::BigNum, LongNumbers::BigNum) [2]
+                0.13   27.77    1540/1550        LongNumbers::DivLarge(LongNumbers::BigNum, LongNumbers::BigNum) [4]
+                1.32    1.67    2557/2579        LongNumbers::Mul(LongNumbers::BigNum, LongNumbers::BigNum) [8]
+                0.00    0.00    2557/13408482     LongNumbers::Sub(LongNumbers::BigNum, LongNumbers::BigNum) <cycle 1> [5]
+                0.00    0.00    1020/28469824     LongNumbers::EqualZero(LongNumbers::BigNum) [10]
+                0.00    0.00       2/13075598     LongNumbers::CopyOf(LongNumbers::BigNum) [7]
+                0.00    0.00    1017/1017        std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::push(LongNumbers::ArrayOfArray const&) [61]
+                0.00    0.00    1017/1017        std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::top() [60]
+                0.00    0.00    1017/1017        std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::pop() [59]
+                0.00    0.00       1/1           std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::stack<std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >, void>() [123]
+                0.00    0.00       1/1           LongNumbers::BigNum::BigNum() [106]
+                0.00    0.00       1/1           std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::~stack() [124]
+-----------------------------------------------
+[3]     91.3   24.21    4.19 13408482+233999  <cycle 1 as a whole> [3]
+               23.76    4.17 12609306+472856      LongNumbers::Sub(LongNumbers::BigNum, LongNumbers::BigNum) <cycle 1> [5]
+                0.45    0.02 1033175             LongNumbers::Add(LongNumbers::BigNum, LongNumbers::BigNum) <cycle 1> [9]
+-----------------------------------------------
+                0.00    0.18      10/1550        LongNumbers::Inverse(LongNumbers::BigNum, LongNumbers::BigNum) [11]
+                0.13   27.77    1540/1550        LongNumbers::PwrMod(LongNumbers::BigNum, LongNumbers::BigNum, LongNumbers::BigNum) [2]
+[4]     90.3    0.13   27.95    1550         LongNumbers::DivLarge(LongNumbers::BigNum, LongNumbers::BigNum) [4]
+                1.05   25.70  233990/233990      LongNumbers::DivSmall(LongNumbers::BigNum, LongNumbers::BigNum) [6]
+                0.86    0.15  478950/13408482     LongNumbers::Sub(LongNumbers::BigNum, LongNumbers::BigNum) <cycle 1> [5]
+                0.19    0.00  478950/478950      LongNumbers::AddFront(LongNumbers::BigNum, int) [12]
+                0.00    0.00    1550/28469824     LongNumbers::EqualZero(LongNumbers::BigNum) [10]
+                0.00    0.00    1550/1557        int* std::end<int, 309ul>(int (&) [309ul]) [28]
+                0.00    0.00    1550/1557        void std::reverse<int*>(int*, int*) [30]
+                0.00    0.00    1550/1557        int* std::begin<int, 309ul>(int (&) [309ul]) [29]
+-----------------------------------------------
+                              472856             LongNumbers::Sub(LongNumbers::BigNum, LongNumbers::BigNum) <cycle 1> [5]
+                              233990             LongNumbers::Add(LongNumbers::BigNum, LongNumbers::BigNum) <cycle 1> [9]
+                0.00    0.00       2/13408482     main [1]
+                0.00    0.00      33/13408482     LongNumbers::Inverse(LongNumbers::BigNum, LongNumbers::BigNum) [11]
+                0.00    0.00    2557/13408482     LongNumbers::PwrMod(LongNumbers::BigNum, LongNumbers::BigNum, LongNumbers::BigNum) [2]
+                0.86    0.15  478950/13408482     LongNumbers::DivLarge(LongNumbers::BigNum, LongNumbers::BigNum) [4]
+               21.48    3.72 11893774/13408482     LongNumbers::DivSmall(LongNumbers::BigNum, LongNumbers::BigNum) [6]
+[5]     89.8   23.76    4.17 12609306+472856  LongNumbers::Sub(LongNumbers::BigNum, LongNumbers::BigNum) <cycle 1> [5]
+                3.90    0.00 13075552/13075598     LongNumbers::CopyOf(LongNumbers::BigNum) [7]
+                0.27    0.00 26164324/28469824     LongNumbers::EqualZero(LongNumbers::BigNum) [10]
+                                   9             LongNumbers::Add(LongNumbers::BigNum, LongNumbers::BigNum) <cycle 1> [9]
+                              472856             LongNumbers::Sub(LongNumbers::BigNum, LongNumbers::BigNum) <cycle 1> [5]
+-----------------------------------------------
+                1.05   25.70  233990/233990      LongNumbers::DivLarge(LongNumbers::BigNum, LongNumbers::BigNum) [4]
+[6]     86.0    1.05   25.70  233990         LongNumbers::DivSmall(LongNumbers::BigNum, LongNumbers::BigNum) [6]
+               21.48    3.72 11893774/13408482     LongNumbers::Sub(LongNumbers::BigNum, LongNumbers::BigNum) <cycle 1> [5]
+                0.43    0.07  236255/13408482     LongNumbers::Add(LongNumbers::BigNum, LongNumbers::BigNum) <cycle 1> [9]
+                0.00    0.00  233990/28469824     LongNumbers::EqualZero(LongNumbers::BigNum) [10]
+-----------------------------------------------
+                0.00    0.00       2/13075598     LongNumbers::PwrMod(LongNumbers::BigNum, LongNumbers::BigNum, LongNumbers::BigNum) [2]
+                0.00    0.00      44/13075598     LongNumbers::Inverse(LongNumbers::BigNum, LongNumbers::BigNum) [11]
+                3.90    0.00 13075552/13075598     LongNumbers::Sub(LongNumbers::BigNum, LongNumbers::BigNum) <cycle 1> [5]
+[7]     12.5    3.90    0.00 13075598         LongNumbers::CopyOf(LongNumbers::BigNum) [7]
+-----------------------------------------------
+                0.00    0.00       2/2579        main [1]
+                0.01    0.01      20/2579        LongNumbers::Inverse(LongNumbers::BigNum, LongNumbers::BigNum) [11]
+                1.32    1.67    2557/2579        LongNumbers::PwrMod(LongNumbers::BigNum, LongNumbers::BigNum, LongNumbers::BigNum) [2]
+[8]      9.7    1.33    1.69    2579         LongNumbers::Mul(LongNumbers::BigNum, LongNumbers::BigNum) [8]
+                1.44    0.25  796911/13408482     LongNumbers::Add(LongNumbers::BigNum, LongNumbers::BigNum) <cycle 1> [9]
+                0.00    0.00    5158/28469824     LongNumbers::EqualZero(LongNumbers::BigNum) [10]
+-----------------------------------------------
+                                   9             LongNumbers::Sub(LongNumbers::BigNum, LongNumbers::BigNum) <cycle 1> [5]
+                0.43    0.07  236255/13408482     LongNumbers::DivSmall(LongNumbers::BigNum, LongNumbers::BigNum) [6]
+                1.44    0.25  796911/13408482     LongNumbers::Mul(LongNumbers::BigNum, LongNumbers::BigNum) [8]
+[9]      1.5    0.45    0.02 1033175         LongNumbers::Add(LongNumbers::BigNum, LongNumbers::BigNum) <cycle 1> [9]
+                0.02    0.00 2063758/28469824     LongNumbers::EqualZero(LongNumbers::BigNum) [10]
+                              233990             LongNumbers::Sub(LongNumbers::BigNum, LongNumbers::BigNum) <cycle 1> [5]
+-----------------------------------------------
+                0.00    0.00      24/28469824     LongNumbers::Inverse(LongNumbers::BigNum, LongNumbers::BigNum) [11]
+                0.00    0.00    1020/28469824     LongNumbers::PwrMod(LongNumbers::BigNum, LongNumbers::BigNum, LongNumbers::BigNum) [2]
+                0.00    0.00    1550/28469824     LongNumbers::DivLarge(LongNumbers::BigNum, LongNumbers::BigNum) [4]
+                0.00    0.00    5158/28469824     LongNumbers::Mul(LongNumbers::BigNum, LongNumbers::BigNum) [8]
+                0.00    0.00  233990/28469824     LongNumbers::DivSmall(LongNumbers::BigNum, LongNumbers::BigNum) [6]
+                0.02    0.00 2063758/28469824     LongNumbers::Add(LongNumbers::BigNum, LongNumbers::BigNum) <cycle 1> [9]
+                0.27    0.00 26164324/28469824     LongNumbers::Sub(LongNumbers::BigNum, LongNumbers::BigNum) <cycle 1> [5]
+[10]     0.9    0.29    0.00 28469824         LongNumbers::EqualZero(LongNumbers::BigNum) [10]
+-----------------------------------------------
+                0.00    0.20       1/1           main [1]
+[11]     0.7    0.00    0.20       1         LongNumbers::Inverse(LongNumbers::BigNum, LongNumbers::BigNum) [11]
+                0.00    0.18      10/1550        LongNumbers::DivLarge(LongNumbers::BigNum, LongNumbers::BigNum) [4]
+                0.01    0.01      20/2579        LongNumbers::Mul(LongNumbers::BigNum, LongNumbers::BigNum) [8]
+                0.00    0.00      33/13408482     LongNumbers::Sub(LongNumbers::BigNum, LongNumbers::BigNum) <cycle 1> [5]
+                0.00    0.00      44/13075598     LongNumbers::CopyOf(LongNumbers::BigNum) [7]
+                0.00    0.00      24/28469824     LongNumbers::EqualZero(LongNumbers::BigNum) [10]
+-----------------------------------------------
+                0.19    0.00  478950/478950      LongNumbers::DivLarge(LongNumbers::BigNum, LongNumbers::BigNum) [4]
+[12]     0.6    0.19    0.00  478950         LongNumbers::AddFront(LongNumbers::BigNum, int) [12]
+-----------------------------------------------
+                0.00    0.00  719334/719334      std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<int> >, std::is_move_constructible<int>, std::is_move_assignable<int> >::value, void>::type std::swap<int>(int&, int&) [20]
+[19]     0.0    0.00    0.00  719334         std::remove_reference<int&>::type&& std::move<int&>(int&) [19]
+-----------------------------------------------
+                0.00    0.00  239778/239778      void std::iter_swap<int*, int*>(int*, int*) [21]
+[20]     0.0    0.00    0.00  239778         std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<int> >, std::is_move_constructible<int>, std::is_move_assignable<int> >::value, void>::type std::swap<int>(int&, int&) [20]
+                0.00    0.00  719334/719334      std::remove_reference<int&>::type&& std::move<int&>(int&) [19]
+-----------------------------------------------
+                0.00    0.00  239778/239778      void std::__reverse<int*>(int*, int*, std::random_access_iterator_tag) [31]
+[21]     0.0    0.00    0.00  239778         void std::iter_swap<int*, int*>(int*, int*) [21]
+                0.00    0.00  239778/239778      std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<int> >, std::is_move_constructible<int>, std::is_move_assignable<int> >::value, void>::type std::swap<int>(int&, int&) [20]
+-----------------------------------------------
+                0.00    0.00       2/6124        std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_initialize_map(unsigned long) [116]
+                0.00    0.00    1018/6124        std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_deallocate_node(LongNumbers::ArrayOfArray*) [37]
+                0.00    0.00    1018/6124        std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_allocate_node() [36]
+                0.00    0.00    4086/6124        std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_S_buffer_size() [23]
+[22]     0.0    0.00    0.00    6124         std::__deque_buf_size(unsigned long) [22]
+-----------------------------------------------
+                0.00    0.00    1017/4086        std::operator-(std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*> const&, std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*> const&) [63]
+                0.00    0.00    3069/4086        std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_M_set_node(LongNumbers::ArrayOfArray**) [24]
+[23]     0.0    0.00    0.00    4086         std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_S_buffer_size() [23]
+                0.00    0.00    4086/6124        std::__deque_buf_size(unsigned long) [22]
+-----------------------------------------------
+                0.00    0.00       2/3069        std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_initialize_map(unsigned long) [116]
+                0.00    0.00      16/3069        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_reallocate_map(unsigned long, bool) [89]
+                0.00    0.00    1017/3069        void std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_push_back_aux<LongNumbers::ArrayOfArray const&>(LongNumbers::ArrayOfArray const&) [54]
+                0.00    0.00    1017/3069        std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::operator--() [48]
+                0.00    0.00    1017/3069        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_pop_back_aux() [53]
+[24]     0.0    0.00    0.00    3069         std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_M_set_node(LongNumbers::ArrayOfArray**) [24]
+                0.00    0.00    3069/4086        std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_S_buffer_size() [23]
+-----------------------------------------------
+                0.00    0.00    1017/3051        void std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::construct<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray const&>(std::allocator<LongNumbers::ArrayOfArray>&, LongNumbers::ArrayOfArray*, LongNumbers::ArrayOfArray const&) [51]
+                0.00    0.00    1017/3051        void std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_push_back_aux<LongNumbers::ArrayOfArray const&>(LongNumbers::ArrayOfArray const&) [54]
+                0.00    0.00    1017/3051        void __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::construct<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray const&>(LongNumbers::ArrayOfArray*, LongNumbers::ArrayOfArray const&) [43]
+[25]     0.0    0.00    0.00    3051         LongNumbers::ArrayOfArray const& std::forward<LongNumbers::ArrayOfArray const&>(std::remove_reference<LongNumbers::ArrayOfArray const&>::type&) [25]
+-----------------------------------------------
+                0.00    0.00    1017/2035        __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::max_size() const [44]
+                0.00    0.00    1018/2035        __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::allocate(unsigned long, void const*) [35]
+[26]     0.0    0.00    0.00    2035         __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::_M_max_size() const [26]
+-----------------------------------------------
+                0.00    0.00    1557/1557        void std::reverse<int*>(int*, int*) [30]
+[27]     0.0    0.00    0.00    1557         std::iterator_traits<int*>::iterator_category std::__iterator_category<int*>(int* const&) [27]
+-----------------------------------------------
+                0.00    0.00       7/1557        LongNumbers::ToPrint[abi:cxx11](LongNumbers::BigNum) [95]
+                0.00    0.00    1550/1557        LongNumbers::DivLarge(LongNumbers::BigNum, LongNumbers::BigNum) [4]
+[28]     0.0    0.00    0.00    1557         int* std::end<int, 309ul>(int (&) [309ul]) [28]
+-----------------------------------------------
+                0.00    0.00       7/1557        LongNumbers::ToPrint[abi:cxx11](LongNumbers::BigNum) [95]
+                0.00    0.00    1550/1557        LongNumbers::DivLarge(LongNumbers::BigNum, LongNumbers::BigNum) [4]
+[29]     0.0    0.00    0.00    1557         int* std::begin<int, 309ul>(int (&) [309ul]) [29]
+-----------------------------------------------
+                0.00    0.00       7/1557        LongNumbers::ToPrint[abi:cxx11](LongNumbers::BigNum) [95]
+                0.00    0.00    1550/1557        LongNumbers::DivLarge(LongNumbers::BigNum, LongNumbers::BigNum) [4]
+[30]     0.0    0.00    0.00    1557         void std::reverse<int*>(int*, int*) [30]
+                0.00    0.00    1557/1557        std::iterator_traits<int*>::iterator_category std::__iterator_category<int*>(int* const&) [27]
+                0.00    0.00    1557/1557        void std::__reverse<int*>(int*, int*, std::random_access_iterator_tag) [31]
+-----------------------------------------------
+                0.00    0.00    1557/1557        void std::reverse<int*>(int*, int*) [30]
+[31]     0.0    0.00    0.00    1557         void std::__reverse<int*>(int*, int*, std::random_access_iterator_tag) [31]
+                0.00    0.00  239778/239778      void std::iter_swap<int*, int*>(int*, int*) [21]
+-----------------------------------------------
+                0.00    0.00      18/1035        std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_get_map_allocator() const [76]
+                0.00    0.00    1017/1035        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::max_size() const [47]
+[32]     0.0    0.00    0.00    1035         std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_get_Tp_allocator() const [32]
+-----------------------------------------------
+                0.00    0.00       1/1019        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::begin() [120]
+                0.00    0.00    1018/1019        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::end() [41]
+[33]     0.0    0.00    0.00    1019         std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_Deque_iterator(std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*> const&) [33]
+-----------------------------------------------
+                0.00    0.00    1018/1018        std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::deallocate(std::allocator<LongNumbers::ArrayOfArray>&, LongNumbers::ArrayOfArray*, unsigned long) [39]
+[34]     0.0    0.00    0.00    1018         __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::deallocate(LongNumbers::ArrayOfArray*, unsigned long) [34]
+-----------------------------------------------
+                0.00    0.00    1018/1018        std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::allocate(std::allocator<LongNumbers::ArrayOfArray>&, unsigned long) [40]
+[35]     0.0    0.00    0.00    1018         __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::allocate(unsigned long, void const*) [35]
+                0.00    0.00    1018/2035        __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::_M_max_size() const [26]
+-----------------------------------------------
+                0.00    0.00       1/1018        std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_create_nodes(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [113]
+                0.00    0.00    1017/1018        void std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_push_back_aux<LongNumbers::ArrayOfArray const&>(LongNumbers::ArrayOfArray const&) [54]
+[36]     0.0    0.00    0.00    1018         std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_allocate_node() [36]
+                0.00    0.00    1018/6124        std::__deque_buf_size(unsigned long) [22]
+                0.00    0.00    1018/1018        std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::allocate(std::allocator<LongNumbers::ArrayOfArray>&, unsigned long) [40]
+-----------------------------------------------
+                0.00    0.00       1/1018        std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_destroy_nodes(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [115]
+                0.00    0.00    1017/1018        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_pop_back_aux() [53]
+[37]     0.0    0.00    0.00    1018         std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_deallocate_node(LongNumbers::ArrayOfArray*) [37]
+                0.00    0.00    1018/6124        std::__deque_buf_size(unsigned long) [22]
+                0.00    0.00    1018/1018        std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::deallocate(std::allocator<LongNumbers::ArrayOfArray>&, LongNumbers::ArrayOfArray*, unsigned long) [39]
+-----------------------------------------------
+                0.00    0.00       1/1018        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::~deque() [122]
+                0.00    0.00    1017/1018        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_pop_back_aux() [53]
+[38]     0.0    0.00    0.00    1018         std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_get_Tp_allocator() [38]
+-----------------------------------------------
+                0.00    0.00    1018/1018        std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_deallocate_node(LongNumbers::ArrayOfArray*) [37]
+[39]     0.0    0.00    0.00    1018         std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::deallocate(std::allocator<LongNumbers::ArrayOfArray>&, LongNumbers::ArrayOfArray*, unsigned long) [39]
+                0.00    0.00    1018/1018        __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::deallocate(LongNumbers::ArrayOfArray*, unsigned long) [34]
+-----------------------------------------------
+                0.00    0.00    1018/1018        std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_allocate_node() [36]
+[40]     0.0    0.00    0.00    1018         std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::allocate(std::allocator<LongNumbers::ArrayOfArray>&, unsigned long) [40]
+                0.00    0.00    1018/1018        __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::allocate(unsigned long, void const*) [35]
+-----------------------------------------------
+                0.00    0.00       1/1018        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::~deque() [122]
+                0.00    0.00    1017/1018        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::back() [56]
+[41]     0.0    0.00    0.00    1018         std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::end() [41]
+                0.00    0.00    1018/1019        std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_Deque_iterator(std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*> const&) [33]
+-----------------------------------------------
+                0.00    0.00    1017/1017        void std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::destroy<LongNumbers::ArrayOfArray>(std::allocator<LongNumbers::ArrayOfArray>&, LongNumbers::ArrayOfArray*) [49]
+[42]     0.0    0.00    0.00    1017         void __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::destroy<LongNumbers::ArrayOfArray>(LongNumbers::ArrayOfArray*) [42]
+-----------------------------------------------
+                0.00    0.00    1017/1017        void std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::construct<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray const&>(std::allocator<LongNumbers::ArrayOfArray>&, LongNumbers::ArrayOfArray*, LongNumbers::ArrayOfArray const&) [51]
+[43]     0.0    0.00    0.00    1017         void __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::construct<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray const&>(LongNumbers::ArrayOfArray*, LongNumbers::ArrayOfArray const&) [43]
+                0.00    0.00    1017/3051        LongNumbers::ArrayOfArray const& std::forward<LongNumbers::ArrayOfArray const&>(std::remove_reference<LongNumbers::ArrayOfArray const&>::type&) [25]
+                0.00    0.00    1017/1017        operator new(unsigned long, void*) [64]
+-----------------------------------------------
+                0.00    0.00    1017/1017        std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::max_size(std::allocator<LongNumbers::ArrayOfArray> const&) [50]
+[44]     0.0    0.00    0.00    1017         __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::max_size() const [44]
+                0.00    0.00    1017/2035        __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::_M_max_size() const [26]
+-----------------------------------------------
+                0.00    0.00    1017/1017        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::back() [56]
+[45]     0.0    0.00    0.00    1017         std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::operator*() const [45]
+-----------------------------------------------
+                0.00    0.00    1017/1017        void std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_push_back_aux<LongNumbers::ArrayOfArray const&>(LongNumbers::ArrayOfArray const&) [54]
+[46]     0.0    0.00    0.00    1017         std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::size() const [46]
+                0.00    0.00    1017/1017        std::operator-(std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*> const&, std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*> const&) [63]
+-----------------------------------------------
+                0.00    0.00    1017/1017        void std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_push_back_aux<LongNumbers::ArrayOfArray const&>(LongNumbers::ArrayOfArray const&) [54]
+[47]     0.0    0.00    0.00    1017         std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::max_size() const [47]
+                0.00    0.00    1017/1035        std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_get_Tp_allocator() const [32]
+                0.00    0.00    1017/1017        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_S_max_size(std::allocator<LongNumbers::ArrayOfArray> const&) [52]
+-----------------------------------------------
+                0.00    0.00    1017/1017        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::back() [56]
+[48]     0.0    0.00    0.00    1017         std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::operator--() [48]
+                0.00    0.00    1017/3069        std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_M_set_node(LongNumbers::ArrayOfArray**) [24]
+-----------------------------------------------
+                0.00    0.00    1017/1017        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_pop_back_aux() [53]
+[49]     0.0    0.00    0.00    1017         void std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::destroy<LongNumbers::ArrayOfArray>(std::allocator<LongNumbers::ArrayOfArray>&, LongNumbers::ArrayOfArray*) [49]
+                0.00    0.00    1017/1017        void __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::destroy<LongNumbers::ArrayOfArray>(LongNumbers::ArrayOfArray*) [42]
+-----------------------------------------------
+                0.00    0.00    1017/1017        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_S_max_size(std::allocator<LongNumbers::ArrayOfArray> const&) [52]
+[50]     0.0    0.00    0.00    1017         std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::max_size(std::allocator<LongNumbers::ArrayOfArray> const&) [50]
+                0.00    0.00    1017/1017        __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::max_size() const [44]
+-----------------------------------------------
+                0.00    0.00    1017/1017        void std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_push_back_aux<LongNumbers::ArrayOfArray const&>(LongNumbers::ArrayOfArray const&) [54]
+[51]     0.0    0.00    0.00    1017         void std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::construct<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray const&>(std::allocator<LongNumbers::ArrayOfArray>&, LongNumbers::ArrayOfArray*, LongNumbers::ArrayOfArray const&) [51]
+                0.00    0.00    1017/3051        LongNumbers::ArrayOfArray const& std::forward<LongNumbers::ArrayOfArray const&>(std::remove_reference<LongNumbers::ArrayOfArray const&>::type&) [25]
+                0.00    0.00    1017/1017        void __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::construct<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray const&>(LongNumbers::ArrayOfArray*, LongNumbers::ArrayOfArray const&) [43]
+-----------------------------------------------
+                0.00    0.00    1017/1017        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::max_size() const [47]
+[52]     0.0    0.00    0.00    1017         std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_S_max_size(std::allocator<LongNumbers::ArrayOfArray> const&) [52]
+                0.00    0.00    1017/1017        std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::max_size(std::allocator<LongNumbers::ArrayOfArray> const&) [50]
+                0.00    0.00    1017/1017        unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [62]
+-----------------------------------------------
+                0.00    0.00    1017/1017        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::pop_back() [57]
+[53]     0.0    0.00    0.00    1017         std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_pop_back_aux() [53]
+                0.00    0.00    1017/1018        std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_deallocate_node(LongNumbers::ArrayOfArray*) [37]
+                0.00    0.00    1017/3069        std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_M_set_node(LongNumbers::ArrayOfArray**) [24]
+                0.00    0.00    1017/1018        std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_get_Tp_allocator() [38]
+                0.00    0.00    1017/1017        void std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::destroy<LongNumbers::ArrayOfArray>(std::allocator<LongNumbers::ArrayOfArray>&, LongNumbers::ArrayOfArray*) [49]
+-----------------------------------------------
+                0.00    0.00    1017/1017        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::push_back(LongNumbers::ArrayOfArray const&) [58]
+[54]     0.0    0.00    0.00    1017         void std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_push_back_aux<LongNumbers::ArrayOfArray const&>(LongNumbers::ArrayOfArray const&) [54]
+                0.00    0.00    1017/1017        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::size() const [46]
+                0.00    0.00    1017/1017        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::max_size() const [47]
+                0.00    0.00    1017/1017        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_reserve_map_at_back(unsigned long) [55]
+                0.00    0.00    1017/1018        std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_allocate_node() [36]
+                0.00    0.00    1017/3051        LongNumbers::ArrayOfArray const& std::forward<LongNumbers::ArrayOfArray const&>(std::remove_reference<LongNumbers::ArrayOfArray const&>::type&) [25]
+                0.00    0.00    1017/1017        void std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::construct<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray const&>(std::allocator<LongNumbers::ArrayOfArray>&, LongNumbers::ArrayOfArray*, LongNumbers::ArrayOfArray const&) [51]
+                0.00    0.00    1017/3069        std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_M_set_node(LongNumbers::ArrayOfArray**) [24]
+-----------------------------------------------
+                0.00    0.00    1017/1017        void std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_push_back_aux<LongNumbers::ArrayOfArray const&>(LongNumbers::ArrayOfArray const&) [54]
+[55]     0.0    0.00    0.00    1017         std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_reserve_map_at_back(unsigned long) [55]
+                0.00    0.00       8/8           std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_reallocate_map(unsigned long, bool) [89]
+-----------------------------------------------
+                0.00    0.00    1017/1017        std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::top() [60]
+[56]     0.0    0.00    0.00    1017         std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::back() [56]
+                0.00    0.00    1017/1017        std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::operator--() [48]
+                0.00    0.00    1017/1018        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::end() [41]
+                0.00    0.00    1017/1017        std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::operator*() const [45]
+-----------------------------------------------
+                0.00    0.00    1017/1017        std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::pop() [59]
+[57]     0.0    0.00    0.00    1017         std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::pop_back() [57]
+                0.00    0.00    1017/1017        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_pop_back_aux() [53]
+-----------------------------------------------
+                0.00    0.00    1017/1017        std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::push(LongNumbers::ArrayOfArray const&) [61]
+[58]     0.0    0.00    0.00    1017         std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::push_back(LongNumbers::ArrayOfArray const&) [58]
+                0.00    0.00    1017/1017        void std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_push_back_aux<LongNumbers::ArrayOfArray const&>(LongNumbers::ArrayOfArray const&) [54]
+-----------------------------------------------
+                0.00    0.00    1017/1017        LongNumbers::PwrMod(LongNumbers::BigNum, LongNumbers::BigNum, LongNumbers::BigNum) [2]
+[59]     0.0    0.00    0.00    1017         std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::pop() [59]
+                0.00    0.00    1017/1017        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::pop_back() [57]
+-----------------------------------------------
+                0.00    0.00    1017/1017        LongNumbers::PwrMod(LongNumbers::BigNum, LongNumbers::BigNum, LongNumbers::BigNum) [2]
+[60]     0.0    0.00    0.00    1017         std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::top() [60]
+                0.00    0.00    1017/1017        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::back() [56]
+-----------------------------------------------
+                0.00    0.00    1017/1017        LongNumbers::PwrMod(LongNumbers::BigNum, LongNumbers::BigNum, LongNumbers::BigNum) [2]
+[61]     0.0    0.00    0.00    1017         std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::push(LongNumbers::ArrayOfArray const&) [61]
+                0.00    0.00    1017/1017        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::push_back(LongNumbers::ArrayOfArray const&) [58]
+-----------------------------------------------
+                0.00    0.00    1017/1017        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_S_max_size(std::allocator<LongNumbers::ArrayOfArray> const&) [52]
+[62]     0.0    0.00    0.00    1017         unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [62]
+-----------------------------------------------
+                0.00    0.00    1017/1017        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::size() const [46]
+[63]     0.0    0.00    0.00    1017         std::operator-(std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*> const&, std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*> const&) [63]
+                0.00    0.00    1017/4086        std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_S_buffer_size() [23]
+-----------------------------------------------
+                0.00    0.00    1017/1017        void __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::construct<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray const&>(LongNumbers::ArrayOfArray*, LongNumbers::ArrayOfArray const&) [43]
+[64]     0.0    0.00    0.00    1017         operator new(unsigned long, void*) [64]
+-----------------------------------------------
+                0.00    0.00     924/924         std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<char> >, std::is_move_constructible<char>, std::is_move_assignable<char> >::value, void>::type std::swap<char>(char&, char&) [71]
+[65]     0.0    0.00    0.00     924         std::remove_reference<char&>::type&& std::move<char&>(char&) [65]
+-----------------------------------------------
+                0.00    0.00       8/632         bool __gnu_cxx::operator==<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) [97]
+                0.00    0.00     624/632         bool __gnu_cxx::operator< <char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) [69]
+[66]     0.0    0.00    0.00     632         __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::base() const [66]
+-----------------------------------------------
+                0.00    0.00     616/616         void std::iter_swap<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >) [72]
+[67]     0.0    0.00    0.00     616         __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator*() const [67]
+-----------------------------------------------
+                0.00    0.00     312/312         void std::__reverse<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::random_access_iterator_tag) [102]
+[68]     0.0    0.00    0.00     312         __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator--() [68]
+-----------------------------------------------
+                0.00    0.00     312/312         void std::__reverse<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::random_access_iterator_tag) [102]
+[69]     0.0    0.00    0.00     312         bool __gnu_cxx::operator< <char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) [69]
+                0.00    0.00     624/632         __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::base() const [66]
+-----------------------------------------------
+                0.00    0.00     308/308         void std::__reverse<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::random_access_iterator_tag) [102]
+[70]     0.0    0.00    0.00     308         __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator++() [70]
+-----------------------------------------------
+                0.00    0.00     308/308         void std::iter_swap<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >) [72]
+[71]     0.0    0.00    0.00     308         std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<char> >, std::is_move_constructible<char>, std::is_move_assignable<char> >::value, void>::type std::swap<char>(char&, char&) [71]
+                0.00    0.00     924/924         std::remove_reference<char&>::type&& std::move<char&>(char&) [65]
+-----------------------------------------------
+                0.00    0.00     308/308         void std::__reverse<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::random_access_iterator_tag) [102]
+[72]     0.0    0.00    0.00     308         void std::iter_swap<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >) [72]
+                0.00    0.00     616/616         __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator*() const [67]
+                0.00    0.00     308/308         std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<char> >, std::is_move_constructible<char>, std::is_move_assignable<char> >::value, void>::type std::swap<char>(char&, char&) [71]
+-----------------------------------------------
+                0.00    0.00      24/24          LongNumbers::ArrayOfArray** std::__copy_move_a<false, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [91]
+[73]     0.0    0.00    0.00      24         LongNumbers::ArrayOfArray** std::__niter_base<LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**) [73]
+-----------------------------------------------
+                0.00    0.00      18/18          std::allocator<LongNumbers::ArrayOfArray*>::allocator<LongNumbers::ArrayOfArray>(std::allocator<LongNumbers::ArrayOfArray> const&) [77]
+[74]     0.0    0.00    0.00      18         __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray*>::new_allocator() [74]
+-----------------------------------------------
+                0.00    0.00      18/18          std::allocator<LongNumbers::ArrayOfArray*>::~allocator() [78]
+[75]     0.0    0.00    0.00      18         __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray*>::~new_allocator() [75]
+-----------------------------------------------
+                0.00    0.00       9/18          std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_deallocate_map(LongNumbers::ArrayOfArray**, unsigned long) [84]
+                0.00    0.00       9/18          std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_allocate_map(unsigned long) [83]
+[76]     0.0    0.00    0.00      18         std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_get_map_allocator() const [76]
+                0.00    0.00      18/1035        std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_get_Tp_allocator() const [32]
+                0.00    0.00      18/18          std::allocator<LongNumbers::ArrayOfArray*>::allocator<LongNumbers::ArrayOfArray>(std::allocator<LongNumbers::ArrayOfArray> const&) [77]
+-----------------------------------------------
+                0.00    0.00      18/18          std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_get_map_allocator() const [76]
+[77]     0.0    0.00    0.00      18         std::allocator<LongNumbers::ArrayOfArray*>::allocator<LongNumbers::ArrayOfArray>(std::allocator<LongNumbers::ArrayOfArray> const&) [77]
+                0.00    0.00      18/18          __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray*>::new_allocator() [74]
+-----------------------------------------------
+                0.00    0.00       9/18          std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_deallocate_map(LongNumbers::ArrayOfArray**, unsigned long) [84]
+                0.00    0.00       9/18          std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_allocate_map(unsigned long) [83]
+[78]     0.0    0.00    0.00      18         std::allocator<LongNumbers::ArrayOfArray*>::~allocator() [78]
+                0.00    0.00      18/18          __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray*>::~new_allocator() [75]
+-----------------------------------------------
+                0.00    0.00      16/16          LongNumbers::ArrayOfArray** std::copy<LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [94]
+[79]     0.0    0.00    0.00      16         LongNumbers::ArrayOfArray** std::__miter_base<LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**) [79]
+-----------------------------------------------
+                0.00    0.00       9/9           std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray*> >::deallocate(std::allocator<LongNumbers::ArrayOfArray*>&, LongNumbers::ArrayOfArray**, unsigned long) [85]
+[80]     0.0    0.00    0.00       9         __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray*>::deallocate(LongNumbers::ArrayOfArray**, unsigned long) [80]
+-----------------------------------------------
+                0.00    0.00       9/9           std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray*> >::allocate(std::allocator<LongNumbers::ArrayOfArray*>&, unsigned long) [86]
+[81]     0.0    0.00    0.00       9         __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray*>::allocate(unsigned long, void const*) [81]
+                0.00    0.00       9/9           __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray*>::_M_max_size() const [82]
+-----------------------------------------------
+                0.00    0.00       9/9           __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray*>::allocate(unsigned long, void const*) [81]
+[82]     0.0    0.00    0.00       9         __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray*>::_M_max_size() const [82]
+-----------------------------------------------
+                0.00    0.00       1/9           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_initialize_map(unsigned long) [116]
+                0.00    0.00       8/9           std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_reallocate_map(unsigned long, bool) [89]
+[83]     0.0    0.00    0.00       9         std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_allocate_map(unsigned long) [83]
+                0.00    0.00       9/18          std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_get_map_allocator() const [76]
+                0.00    0.00       9/9           std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray*> >::allocate(std::allocator<LongNumbers::ArrayOfArray*>&, unsigned long) [86]
+                0.00    0.00       9/18          std::allocator<LongNumbers::ArrayOfArray*>::~allocator() [78]
+-----------------------------------------------
+                0.00    0.00       1/9           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::~_Deque_base() [118]
+                0.00    0.00       8/9           std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_reallocate_map(unsigned long, bool) [89]
+[84]     0.0    0.00    0.00       9         std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_deallocate_map(LongNumbers::ArrayOfArray**, unsigned long) [84]
+                0.00    0.00       9/18          std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_get_map_allocator() const [76]
+                0.00    0.00       9/9           std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray*> >::deallocate(std::allocator<LongNumbers::ArrayOfArray*>&, LongNumbers::ArrayOfArray**, unsigned long) [85]
+                0.00    0.00       9/18          std::allocator<LongNumbers::ArrayOfArray*>::~allocator() [78]
+-----------------------------------------------
+                0.00    0.00       9/9           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_deallocate_map(LongNumbers::ArrayOfArray**, unsigned long) [84]
+[85]     0.0    0.00    0.00       9         std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray*> >::deallocate(std::allocator<LongNumbers::ArrayOfArray*>&, LongNumbers::ArrayOfArray**, unsigned long) [85]
+                0.00    0.00       9/9           __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray*>::deallocate(LongNumbers::ArrayOfArray**, unsigned long) [80]
+-----------------------------------------------
+                0.00    0.00       9/9           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_allocate_map(unsigned long) [83]
+[86]     0.0    0.00    0.00       9         std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray*> >::allocate(std::allocator<LongNumbers::ArrayOfArray*>&, unsigned long) [86]
+                0.00    0.00       9/9           __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray*>::allocate(unsigned long, void const*) [81]
+-----------------------------------------------
+                0.00    0.00       1/9           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_initialize_map(unsigned long) [116]
+                0.00    0.00       8/9           std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_reallocate_map(unsigned long, bool) [89]
+[87]     0.0    0.00    0.00       9         unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [87]
+-----------------------------------------------
+                0.00    0.00       8/8           LongNumbers::ArrayOfArray** std::__copy_move_a2<false, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [93]
+[88]     0.0    0.00    0.00       8         LongNumbers::ArrayOfArray** std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<LongNumbers::ArrayOfArray*>(LongNumbers::ArrayOfArray* const*, LongNumbers::ArrayOfArray* const*, LongNumbers::ArrayOfArray**) [88]
+-----------------------------------------------
+                0.00    0.00       8/8           std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_reserve_map_at_back(unsigned long) [55]
+[89]     0.0    0.00    0.00       8         std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_reallocate_map(unsigned long, bool) [89]
+                0.00    0.00      16/3069        std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_M_set_node(LongNumbers::ArrayOfArray**) [24]
+                0.00    0.00       8/9           unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [87]
+                0.00    0.00       8/9           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_allocate_map(unsigned long) [83]
+                0.00    0.00       8/8           LongNumbers::ArrayOfArray** std::copy<LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [94]
+                0.00    0.00       8/9           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_deallocate_map(LongNumbers::ArrayOfArray**, unsigned long) [84]
+-----------------------------------------------
+                0.00    0.00       8/8           LongNumbers::ArrayOfArray** std::__copy_move_a<false, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [91]
+[90]     0.0    0.00    0.00       8         LongNumbers::ArrayOfArray** std::__niter_wrap<LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray** const&, LongNumbers::ArrayOfArray**) [90]
+-----------------------------------------------
+                0.00    0.00       8/8           LongNumbers::ArrayOfArray** std::copy<LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [94]
+[91]     0.0    0.00    0.00       8         LongNumbers::ArrayOfArray** std::__copy_move_a<false, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [91]
+                0.00    0.00      24/24          LongNumbers::ArrayOfArray** std::__niter_base<LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**) [73]
+                0.00    0.00       8/8           LongNumbers::ArrayOfArray** std::__copy_move_a1<false, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [92]
+                0.00    0.00       8/8           LongNumbers::ArrayOfArray** std::__niter_wrap<LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray** const&, LongNumbers::ArrayOfArray**) [90]
+-----------------------------------------------
+                0.00    0.00       8/8           LongNumbers::ArrayOfArray** std::__copy_move_a<false, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [91]
+[92]     0.0    0.00    0.00       8         LongNumbers::ArrayOfArray** std::__copy_move_a1<false, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [92]
+                0.00    0.00       8/8           LongNumbers::ArrayOfArray** std::__copy_move_a2<false, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [93]
+-----------------------------------------------
+                0.00    0.00       8/8           LongNumbers::ArrayOfArray** std::__copy_move_a1<false, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [92]
+[93]     0.0    0.00    0.00       8         LongNumbers::ArrayOfArray** std::__copy_move_a2<false, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [93]
+                0.00    0.00       8/8           LongNumbers::ArrayOfArray** std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<LongNumbers::ArrayOfArray*>(LongNumbers::ArrayOfArray* const*, LongNumbers::ArrayOfArray* const*, LongNumbers::ArrayOfArray**) [88]
+-----------------------------------------------
+                0.00    0.00       8/8           std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_reallocate_map(unsigned long, bool) [89]
+[94]     0.0    0.00    0.00       8         LongNumbers::ArrayOfArray** std::copy<LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [94]
+                0.00    0.00      16/16          LongNumbers::ArrayOfArray** std::__miter_base<LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**) [79]
+                0.00    0.00       8/8           LongNumbers::ArrayOfArray** std::__copy_move_a<false, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [91]
+-----------------------------------------------
+                0.00    0.00       7/7           main [1]
+[95]     0.0    0.00    0.00       7         LongNumbers::ToPrint[abi:cxx11](LongNumbers::BigNum) [95]
+                0.00    0.00       7/1557        int* std::begin<int, 309ul>(int (&) [309ul]) [29]
+                0.00    0.00       7/1557        int* std::end<int, 309ul>(int (&) [309ul]) [28]
+                0.00    0.00       7/1557        void std::reverse<int*>(int*, int*) [30]
+-----------------------------------------------
+                0.00    0.00       4/4           main [1]
+[96]     0.0    0.00    0.00       4         LongNumbers::StringToArray(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [96]
+                0.00    0.00       4/4           decltype (({parm#1}.end)()) std::end<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) [99]
+                0.00    0.00       4/4           decltype (({parm#1}.begin)()) std::begin<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) [100]
+                0.00    0.00       4/4           void std::reverse<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >) [101]
+-----------------------------------------------
+                0.00    0.00       4/4           void std::__reverse<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::random_access_iterator_tag) [102]
+[97]     0.0    0.00    0.00       4         bool __gnu_cxx::operator==<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) [97]
+                0.00    0.00       8/632         __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::base() const [66]
+-----------------------------------------------
+                0.00    0.00       4/4           void std::reverse<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >) [101]
+[98]     0.0    0.00    0.00       4         std::iterator_traits<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::iterator_category std::__iterator_category<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) [98]
+-----------------------------------------------
+                0.00    0.00       4/4           LongNumbers::StringToArray(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [96]
+[99]     0.0    0.00    0.00       4         decltype (({parm#1}.end)()) std::end<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) [99]
+-----------------------------------------------
+                0.00    0.00       4/4           LongNumbers::StringToArray(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [96]
+[100]    0.0    0.00    0.00       4         decltype (({parm#1}.begin)()) std::begin<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) [100]
+-----------------------------------------------
+                0.00    0.00       4/4           LongNumbers::StringToArray(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [96]
+[101]    0.0    0.00    0.00       4         void std::reverse<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >) [101]
+                0.00    0.00       4/4           std::iterator_traits<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::iterator_category std::__iterator_category<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) [98]
+                0.00    0.00       4/4           void std::__reverse<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::random_access_iterator_tag) [102]
+-----------------------------------------------
+                0.00    0.00       4/4           void std::reverse<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >) [101]
+[102]    0.0    0.00    0.00       4         void std::__reverse<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::random_access_iterator_tag) [102]
+                0.00    0.00     312/312         __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator--() [68]
+                0.00    0.00     312/312         bool __gnu_cxx::operator< <char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) [69]
+                0.00    0.00     308/308         __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator++() [70]
+                0.00    0.00     308/308         void std::iter_swap<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >) [72]
+                0.00    0.00       4/4           bool __gnu_cxx::operator==<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) [97]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_Deque_impl_data::_Deque_impl_data() [114]
+[103]    0.0    0.00    0.00       2         std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_Deque_iterator() [103]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [133]
+[104]    0.0    0.00    0.00       1         _GLOBAL__sub_I_main [104]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [105]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I_main [104]
+[105]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [105]
+-----------------------------------------------
+                0.00    0.00       1/1           LongNumbers::PwrMod(LongNumbers::BigNum, LongNumbers::BigNum, LongNumbers::BigNum) [2]
+[106]    0.0    0.00    0.00       1         LongNumbers::BigNum::BigNum() [106]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<LongNumbers::ArrayOfArray>::allocator() [109]
+[107]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::new_allocator() [107]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<LongNumbers::ArrayOfArray>::~allocator() [110]
+[108]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::~new_allocator() [108]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_Deque_impl::_Deque_impl() [111]
+[109]    0.0    0.00    0.00       1         std::allocator<LongNumbers::ArrayOfArray>::allocator() [109]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::new_allocator() [107]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_Deque_impl::~_Deque_impl() [112]
+[110]    0.0    0.00    0.00       1         std::allocator<LongNumbers::ArrayOfArray>::~allocator() [110]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::~new_allocator() [108]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_Deque_base() [117]
+[111]    0.0    0.00    0.00       1         std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_Deque_impl::_Deque_impl() [111]
+                0.00    0.00       1/1           std::allocator<LongNumbers::ArrayOfArray>::allocator() [109]
+                0.00    0.00       1/1           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_Deque_impl_data::_Deque_impl_data() [114]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::~_Deque_base() [118]
+[112]    0.0    0.00    0.00       1         std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_Deque_impl::~_Deque_impl() [112]
+                0.00    0.00       1/1           std::allocator<LongNumbers::ArrayOfArray>::~allocator() [110]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_initialize_map(unsigned long) [116]
+[113]    0.0    0.00    0.00       1         std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_create_nodes(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [113]
+                0.00    0.00       1/1018        std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_allocate_node() [36]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_Deque_impl::_Deque_impl() [111]
+[114]    0.0    0.00    0.00       1         std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_Deque_impl_data::_Deque_impl_data() [114]
+                0.00    0.00       2/2           std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_Deque_iterator() [103]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::~_Deque_base() [118]
+[115]    0.0    0.00    0.00       1         std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_destroy_nodes(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [115]
+                0.00    0.00       1/1018        std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_deallocate_node(LongNumbers::ArrayOfArray*) [37]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_Deque_base() [117]
+[116]    0.0    0.00    0.00       1         std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_initialize_map(unsigned long) [116]
+                0.00    0.00       2/6124        std::__deque_buf_size(unsigned long) [22]
+                0.00    0.00       2/3069        std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_M_set_node(LongNumbers::ArrayOfArray**) [24]
+                0.00    0.00       1/9           unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [87]
+                0.00    0.00       1/9           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_allocate_map(unsigned long) [83]
+                0.00    0.00       1/1           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_create_nodes(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [113]
+-----------------------------------------------
+                0.00    0.00       1/1           std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::deque() [121]
+[117]    0.0    0.00    0.00       1         std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_Deque_base() [117]
+                0.00    0.00       1/1           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_Deque_impl::_Deque_impl() [111]
+                0.00    0.00       1/1           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_initialize_map(unsigned long) [116]
+-----------------------------------------------
+                0.00    0.00       1/1           std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::~deque() [122]
+[118]    0.0    0.00    0.00       1         std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::~_Deque_base() [118]
+                0.00    0.00       1/1           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_destroy_nodes(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [115]
+                0.00    0.00       1/1           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_Deque_impl::~_Deque_impl() [112]
+                0.00    0.00       1/9           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_deallocate_map(LongNumbers::ArrayOfArray**, unsigned long) [84]
+-----------------------------------------------
+                0.00    0.00       1/1           std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::~deque() [122]
+[119]    0.0    0.00    0.00       1         std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_destroy_data(std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>, std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>, std::allocator<LongNumbers::ArrayOfArray> const&) [119]
+-----------------------------------------------
+                0.00    0.00       1/1           std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::~deque() [122]
+[120]    0.0    0.00    0.00       1         std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::begin() [120]
+                0.00    0.00       1/1019        std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_Deque_iterator(std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*> const&) [33]
+-----------------------------------------------
+                0.00    0.00       1/1           std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::stack<std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >, void>() [123]
+[121]    0.0    0.00    0.00       1         std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::deque() [121]
+                0.00    0.00       1/1           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_Deque_base() [117]
+-----------------------------------------------
+                0.00    0.00       1/1           std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::~stack() [124]
+[122]    0.0    0.00    0.00       1         std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::~deque() [122]
+                0.00    0.00       1/1018        std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_get_Tp_allocator() [38]
+                0.00    0.00       1/1018        std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::end() [41]
+                0.00    0.00       1/1           std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::begin() [120]
+                0.00    0.00       1/1           std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::~_Deque_base() [118]
+                0.00    0.00       1/1           std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_destroy_data(std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>, std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>, std::allocator<LongNumbers::ArrayOfArray> const&) [119]
+-----------------------------------------------
+                0.00    0.00       1/1           LongNumbers::PwrMod(LongNumbers::BigNum, LongNumbers::BigNum, LongNumbers::BigNum) [2]
+[123]    0.0    0.00    0.00       1         std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::stack<std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >, void>() [123]
+                0.00    0.00       1/1           std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::deque() [121]
+-----------------------------------------------
+                0.00    0.00       1/1           LongNumbers::PwrMod(LongNumbers::BigNum, LongNumbers::BigNum, LongNumbers::BigNum) [2]
+[124]    0.0    0.00    0.00       1         std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::~stack() [124]
+                0.00    0.00       1/1           std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::~deque() [122]
+-----------------------------------------------
+
+Index by function name
+
+ [104] _GLOBAL__sub_I_main (rsa_serial1.cpp) [109] std::allocator<LongNumbers::ArrayOfArray>::allocator() [57] std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::pop_back()
+ [105] __static_initialization_and_destruction_0(int, int) (rsa_serial1.cpp) [110] std::allocator<LongNumbers::ArrayOfArray>::~allocator() [58] std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::push_back(LongNumbers::ArrayOfArray const&)
+  [96] LongNumbers::StringToArray(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [77] std::allocator<LongNumbers::ArrayOfArray*>::allocator<LongNumbers::ArrayOfArray>(std::allocator<LongNumbers::ArrayOfArray> const&) [121] std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::deque()
+   [9] LongNumbers::Add(LongNumbers::BigNum, LongNumbers::BigNum) [78] std::allocator<LongNumbers::ArrayOfArray*>::~allocator() [122] std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::~deque()
+   [8] LongNumbers::Mul(LongNumbers::BigNum, LongNumbers::BigNum) [111] std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_Deque_impl::_Deque_impl() [59] std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::pop()
+   [5] LongNumbers::Sub(LongNumbers::BigNum, LongNumbers::BigNum) [112] std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_Deque_impl::~_Deque_impl() [60] std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::top()
+ [106] LongNumbers::BigNum::BigNum() [83] std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_allocate_map(unsigned long) [61] std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::push(LongNumbers::ArrayOfArray const&)
+   [7] LongNumbers::CopyOf(LongNumbers::BigNum) [113] std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_create_nodes(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [123] std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::stack<std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >, void>()
+   [2] LongNumbers::PwrMod(LongNumbers::BigNum, LongNumbers::BigNum, LongNumbers::BigNum) [114] std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_Deque_impl_data::_Deque_impl_data() [124] std::stack<LongNumbers::ArrayOfArray, std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> > >::~stack()
+  [11] LongNumbers::Inverse(LongNumbers::BigNum, LongNumbers::BigNum) [36] std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_allocate_node() [79] LongNumbers::ArrayOfArray** std::__miter_base<LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**)
+  [95] LongNumbers::ToPrint[abi:cxx11](LongNumbers::BigNum) [115] std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_destroy_nodes(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**) [73] LongNumbers::ArrayOfArray** std::__niter_base<LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**)
+  [12] LongNumbers::AddFront(LongNumbers::BigNum, int) [84] std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_deallocate_map(LongNumbers::ArrayOfArray**, unsigned long) [90] LongNumbers::ArrayOfArray** std::__niter_wrap<LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray** const&, LongNumbers::ArrayOfArray**)
+   [4] LongNumbers::DivLarge(LongNumbers::BigNum, LongNumbers::BigNum) [116] std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_initialize_map(unsigned long) [91] LongNumbers::ArrayOfArray** std::__copy_move_a<false, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**)
+   [6] LongNumbers::DivSmall(LongNumbers::BigNum, LongNumbers::BigNum) [37] std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_deallocate_node(LongNumbers::ArrayOfArray*) [92] LongNumbers::ArrayOfArray** std::__copy_move_a1<false, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**)
+  [10] LongNumbers::EqualZero(LongNumbers::BigNum) [38] std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_get_Tp_allocator() [93] LongNumbers::ArrayOfArray** std::__copy_move_a2<false, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**)
+  [34] __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::deallocate(LongNumbers::ArrayOfArray*, unsigned long) [117] std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_Deque_base() [22] std::__deque_buf_size(unsigned long)
+  [42] void __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::destroy<LongNumbers::ArrayOfArray>(LongNumbers::ArrayOfArray*) [118] std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::~_Deque_base() [98] std::iterator_traits<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::iterator_category std::__iterator_category<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&)
+  [35] __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::allocate(unsigned long, void const*) [88] LongNumbers::ArrayOfArray** std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<LongNumbers::ArrayOfArray*>(LongNumbers::ArrayOfArray* const*, LongNumbers::ArrayOfArray* const*, LongNumbers::ArrayOfArray**) [27] std::iterator_traits<int*>::iterator_category std::__iterator_category<int*>(int* const&)
+  [43] void __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::construct<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray const&>(LongNumbers::ArrayOfArray*, LongNumbers::ArrayOfArray const&) [24] std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_M_set_node(LongNumbers::ArrayOfArray**) [99] decltype (({parm#1}.end)()) std::end<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+ [107] __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::new_allocator() [23] std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_S_buffer_size() [28] int* std::end<int, 309ul>(int (&) [309ul])
+ [108] __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::~new_allocator() [33] std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_Deque_iterator(std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*> const&) [87] unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  [80] __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray*>::deallocate(LongNumbers::ArrayOfArray**, unsigned long) [103] std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::_Deque_iterator() [62] unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+  [81] __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray*>::allocate(unsigned long, void const*) [48] std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::operator--() [94] LongNumbers::ArrayOfArray** std::copy<LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**>(LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**, LongNumbers::ArrayOfArray**)
+  [74] __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray*>::new_allocator() [39] std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::deallocate(std::allocator<LongNumbers::ArrayOfArray>&, LongNumbers::ArrayOfArray*, unsigned long) [65] std::remove_reference<char&>::type&& std::move<char&>(char&)
+  [75] __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray*>::~new_allocator() [49] void std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::destroy<LongNumbers::ArrayOfArray>(std::allocator<LongNumbers::ArrayOfArray>&, LongNumbers::ArrayOfArray*) [19] std::remove_reference<int&>::type&& std::move<int&>(int&)
+  [68] __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator--() [40] std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::allocate(std::allocator<LongNumbers::ArrayOfArray>&, unsigned long) [71] std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<char> >, std::is_move_constructible<char>, std::is_move_assignable<char> >::value, void>::type std::swap<char>(char&, char&)
+  [70] __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator++() [50] std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::max_size(std::allocator<LongNumbers::ArrayOfArray> const&) [20] std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<int> >, std::is_move_constructible<int>, std::is_move_assignable<int> >::value, void>::type std::swap<int>(int&, int&)
+  [97] bool __gnu_cxx::operator==<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) [51] void std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray> >::construct<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray const&>(std::allocator<LongNumbers::ArrayOfArray>&, LongNumbers::ArrayOfArray*, LongNumbers::ArrayOfArray const&) [100] decltype (({parm#1}.begin)()) std::begin<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+  [69] bool __gnu_cxx::operator< <char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) [85] std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray*> >::deallocate(std::allocator<LongNumbers::ArrayOfArray*>&, LongNumbers::ArrayOfArray**, unsigned long) [29] int* std::begin<int, 309ul>(int (&) [309ul])
+  [26] __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::_M_max_size() const [86] std::allocator_traits<std::allocator<LongNumbers::ArrayOfArray*> >::allocate(std::allocator<LongNumbers::ArrayOfArray*>&, unsigned long) [25] LongNumbers::ArrayOfArray const& std::forward<LongNumbers::ArrayOfArray const&>(std::remove_reference<LongNumbers::ArrayOfArray const&>::type&)
+  [44] __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray>::max_size() const [52] std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_S_max_size(std::allocator<LongNumbers::ArrayOfArray> const&) [101] void std::reverse<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >)
+  [82] __gnu_cxx::new_allocator<LongNumbers::ArrayOfArray*>::_M_max_size() const [119] std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_destroy_data(std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>, std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>, std::allocator<LongNumbers::ArrayOfArray> const&) [30] void std::reverse<int*>(int*, int*)
+  [66] __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::base() const [53] std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_pop_back_aux() [102] void std::__reverse<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::random_access_iterator_tag)
+  [67] __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator*() const [54] void std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_push_back_aux<LongNumbers::ArrayOfArray const&>(LongNumbers::ArrayOfArray const&) [31] void std::__reverse<int*>(int*, int*, std::random_access_iterator_tag)
+  [32] std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_get_Tp_allocator() const [89] std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_reallocate_map(unsigned long, bool) [72] void std::iter_swap<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >)
+  [76] std::_Deque_base<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_get_map_allocator() const [55] std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::_M_reserve_map_at_back(unsigned long) [21] void std::iter_swap<int*, int*>(int*, int*)
+  [45] std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*>::operator*() const [41] std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::end() [63] std::operator-(std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*> const&, std::_Deque_iterator<LongNumbers::ArrayOfArray, LongNumbers::ArrayOfArray&, LongNumbers::ArrayOfArray*> const&)
+  [46] std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::size() const [56] std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::back() [64] operator new(unsigned long, void*)
+  [47] std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::max_size() const [120] std::deque<LongNumbers::ArrayOfArray, std::allocator<LongNumbers::ArrayOfArray> >::begin() [3] <cycle 1>

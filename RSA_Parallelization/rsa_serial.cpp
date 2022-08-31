@@ -2,6 +2,7 @@
 #include <fstream>
 #include <stdio.h>
 #include <cmath>
+#include <omp.h>
 
 using namespace std;
 
@@ -21,20 +22,12 @@ unsigned int gcd(unsigned int a, unsigned int b)
     return a;
 }
 
-int main(int argc, char *argv[])
+int main()
 {
 	unsigned int message[MESSAGE_SIZE];
 	long double encryptedMessage[MESSAGE_SIZE];
 
-	// Checking the number of input has to be passed by the user
-	if (argc != 2)
-    {
-        printf("Usage: ./<executable> <msg_file>\n");
-        return -1;
-    }
-
-    // Getting values from the argument
-    ifstream fInput(argv[1]);
+    ifstream fInput("./input1.txt");
     
     // Checking whether the input file exists in the directory or not
     if (!fInput)
@@ -67,6 +60,8 @@ int main(int argc, char *argv[])
 	for (i = 0; i < MESSAGE_SIZE; i++)
 		cout << message[i] << ' ';
 	cout << endl;
+
+	double start = omp_get_wtime();
 	
 	//Compute iN, iE, and iD
 	iN = iP * iQ;
@@ -75,12 +70,13 @@ int main(int argc, char *argv[])
 	iTotientN = iP * iQ;
 	
 	iE = 7;
+	i = 1;
 	while(i < (iN - 1))
 	{
 		if(gcd(iE, iTotientN) == 1)
 			break;
 			
-		iE++;
+		i++;
 	}
 
 	i = 1;
@@ -110,6 +106,11 @@ int main(int argc, char *argv[])
 		cout << encryptedMessage[i]  << ' ';
 	}
 	cout << endl;
+
+	double end = omp_get_wtime();
+	double exec = end - start;
+
+	cout << "Execution Time - " << exec << endl;
 
 	// RSA Decryption
 	cout << "------ Decrypted message -------" << endl;
