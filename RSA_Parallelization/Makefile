@@ -16,6 +16,10 @@ likwid:
 run:
 	g++ -fopenmp rsa_serial1.cpp && ./a.out
 
+runp:
+	export OMP_NUM_THREADS=12
+	g++ -fopenmp rsa_parallel.cpp && ./a.out
+
 clean:
 	rm *.gcov a.out	*.gcno *.gcda
 
