@@ -17,7 +17,7 @@ run:
 	g++ -fopenmp rsa_serial1.cpp && ./a.out
 
 runp:
-	export OMP_NUM_THREADS=12
+	export OMP_NUM_THREADS=2
 	g++ -fopenmp rsa_parallel.cpp && ./a.out
 
 clean:
