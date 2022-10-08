@@ -56,7 +56,7 @@ int main()
         {
             rows = (dest <= extra)?avgrow+1:avgrow;
 
-            printf("Sending %d rows to task-%d offset=%d\n",rows,dest,offset);
+            // printf("Sending %d rows to task-%d offset=%d\n",rows,dest,offset);
 
             MPI_Send(&offset, 1, MPI_INT, dest, mtype, MPI_COMM_WORLD);
             MPI_Send(&rows, 1, MPI_INT, dest, mtype, MPI_COMM_WORLD);
@@ -78,25 +78,25 @@ int main()
             MPI_Recv(&rows, 1, MPI_INT, source, mtype, MPI_COMM_WORLD, &status);
             MPI_Recv(&c[offset][0], rows*SIZE, MPI_LONG_DOUBLE, source, mtype, MPI_COMM_WORLD, &status);
 
-            printf("Received results from task=%d\n", source);
+            // printf("Received results from task=%d\n", source);
         }
-        printf("Result Matrix\n");
+        // printf("Result Matrix\n");
 
-        for(i = 0; i < SIZE;i++)
-        {   
-            // printf("\n");
-            for(int j = 0; j < SIZE;j++)
-            {
-                // printf("%6.2Lf  ",c[i][j]);
-            }
-        }
+        // for(i = 0; i < SIZE;i++)
+        // {   
+        //     // printf("\n");
+        //     for(int j = 0; j < SIZE;j++)
+        //     {
+        //         // printf("%6.2Lf  ",c[i][j]);
+        //     }
+        // }
+        end = MPI_Wtime();
+
+        exec = end - start;
+        printf("MPI Exec time - %f\n", exec);
     }
 
-    //---------------------------------------------------------------------------------------------------
-    end = MPI_Wtime();
-
-    exec = end - start;
-    printf("MPI Exec time - %f\n", exec);
+    //--------------------------------------------------------------------------------------------------
 
 
     //---------------------------------------------------------------------------------------------------

@@ -1,0 +1,7 @@
+MPI Exec time - 0.001803
+MPI Exec time - 0.000705
+MPI Exec time - 0.000796
+MPI Exec time - 0.019843
+MPI Exec time - 0.068105
+MPI Exec time - 0.160006
+MPI Exec time - 0.739739

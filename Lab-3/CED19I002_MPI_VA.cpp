@@ -13,7 +13,7 @@ int main()
 {   
     MPI_Init(NULL, NULL);
 
-    long double a[SIZE][SIZE], b[SIZE][SIZE], c[SIZE][SIZE], rand_a, rand_b;
+    long double a[SIZE], b[SIZE], c[SIZE], rand_a, rand_b;
     double start, end, exec;
     int i,j,k;
 
@@ -37,11 +37,8 @@ int main()
     {
         for (i = 0; i < SIZE; i++)
         {   
-            for(j = 0; j < SIZE; j++)
-            {
-                a[i][j] = (i+j)*1.22;
-                b[i][j] = (i+j)*1.22;
-            }
+            a[i] = (i+j)*1.22;
+            b[i] = (i+j)*1.22;
         }
         //---------------------------------------------------------------------------------------------------
         // Master sending Data to Worker tasks
@@ -56,12 +53,12 @@ int main()
         {
             rows = (dest <= extra)?avgrow+1:avgrow;
 
-            printf("Sending %d rows to task-%d offset=%d\n",rows,dest,offset);
+            // printf("Sending %d rows to task-%d offset=%d\n",rows,dest,offset);
 
             MPI_Send(&offset, 1, MPI_INT, dest, mtype, MPI_COMM_WORLD);
             MPI_Send(&rows, 1, MPI_INT, dest, mtype, MPI_COMM_WORLD);
-            MPI_Send(&a[offset][0], rows*SIZE, MPI_LONG_DOUBLE, dest, mtype, MPI_COMM_WORLD);
-            MPI_Send(&b[offset][0], rows*SIZE, MPI_LONG_DOUBLE, dest, mtype, MPI_COMM_WORLD);
+            MPI_Send(&a[offset], rows, MPI_LONG_DOUBLE, dest, mtype, MPI_COMM_WORLD);
+            MPI_Send(&b[offset], rows, MPI_LONG_DOUBLE, dest, mtype, MPI_COMM_WORLD);
 
             offset += rows;
         }
@@ -76,27 +73,28 @@ int main()
 
             MPI_Recv(&offset, 1, MPI_INT, source, mtype, MPI_COMM_WORLD, &status);
             MPI_Recv(&rows, 1, MPI_INT, source, mtype, MPI_COMM_WORLD, &status);
-            MPI_Recv(&c[offset][0], rows*SIZE, MPI_LONG_DOUBLE, source, mtype, MPI_COMM_WORLD, &status);
+            MPI_Recv(&c[offset], rows, MPI_LONG_DOUBLE, source, mtype, MPI_COMM_WORLD, &status);
 
-            printf("Received results from task=%d\n", source);
+            // printf("Received results from task=%d\n", source);
         }
-        printf("Result Matrix\n");
+        // printf("Result Matrix\n");
 
-        for(i = 0; i < SIZE;i++)
-        {   
-            // printf("\n");
-            for(int j = 0; j < SIZE;j++)
-            {
-                // printf("%6.2Lf  ",c[i][j]);
-            }
-        }
+        // for(i = 0; i < SIZE;i++)
+        // {   
+        //     // printf("\n");
+        //     for(int j = 0; j < SIZE;j++)
+        //     {
+        //         // printf("%6.2Lf  ",c[i][j]);
+        //     }
+        // }
+
+        end = MPI_Wtime();
+
+        exec = end - start;
+        printf("MPI Exec time - %f\n", exec);
     }
 
     //---------------------------------------------------------------------------------------------------
-    end = MPI_Wtime();
-
-    exec = end - start;
-    printf("MPI Exec time - %f\n", exec);
 
 
     //---------------------------------------------------------------------------------------------------
@@ -107,22 +105,20 @@ int main()
 
         MPI_Recv(&offset, 1, MPI_INT, MASTER, mtype, MPI_COMM_WORLD,&status);
         MPI_Recv(&rows, 1, MPI_INT, MASTER, mtype, MPI_COMM_WORLD,&status);
-        MPI_Recv(&a, rows*SIZE, MPI_LONG_DOUBLE, MASTER, mtype, MPI_COMM_WORLD,&status);
-        MPI_Recv(&b, rows*SIZE, MPI_LONG_DOUBLE, MASTER, mtype, MPI_COMM_WORLD,&status);
+        MPI_Recv(&a, rows, MPI_LONG_DOUBLE, MASTER, mtype, MPI_COMM_WORLD,&status);
+        MPI_Recv(&b, rows, MPI_LONG_DOUBLE, MASTER, mtype, MPI_COMM_WORLD,&status);
 
-        for(k = 0; k < SIZE; k++)
+
+        for(i = 0; i < rows; i++)
         {
-            for(i = 0; i < rows; i++)
-            {
-                c[i][k] = a[i][k] * b[i][k];
-            }
+            c[i] = a[i] + b[i];
         }
 
         mtype = FROM_WORKER;
 
         MPI_Send(&offset,1, MPI_INT, MASTER,mtype, MPI_COMM_WORLD);
         MPI_Send(&rows,1, MPI_INT, MASTER,mtype, MPI_COMM_WORLD);
-        MPI_Send(&c, rows*SIZE, MPI_LONG_DOUBLE, dest, mtype, MPI_COMM_WORLD);
+        MPI_Send(&c, rows, MPI_LONG_DOUBLE, dest, mtype, MPI_COMM_WORLD);
 
     }
     MPI_Finalize();
