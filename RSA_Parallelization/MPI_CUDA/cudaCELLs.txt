@@ -1,0 +1,12 @@
+!nvcc -V
+!nvidia-smi
+!pip install git+https://github.com/andreinechaev/nvcc4jupyter.git
+%load_ext nvcc_plugin
+
+!unzip rsa.zip
+
+%cd /content/rsa_decryption_cuda_mpi/
+!make clean
+!make
+
+!./pollardCuda.out
