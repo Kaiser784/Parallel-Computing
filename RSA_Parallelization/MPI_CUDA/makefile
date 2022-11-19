@@ -8,8 +8,12 @@ MCC=mpicc
 
 all: $(PROGS) 
 
-pollardMpi: pollardMpi.c
+pollardMpi: 
 	$(MCC) -fopenmp pollardMpi.c -o pollardMpi.out -lm
+
+mpinon: 
+	$(MCC) -fopenmp pollardMpi.c -o pollardMpi.out -lm
+	mpirun -np 4 ./pollardMpi.out
 
 clean: 
 	rm -f $(PROGS) *.o  *.out

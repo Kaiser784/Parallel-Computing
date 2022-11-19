@@ -1,12 +1,12 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<mpi.h>
+#include <mpi.h>
 #include<omp.h>
 #include<math.h>
 
 #define BOUND 5000
-#define PRIME1 74419 
-#define PRIME2 15731
+#define PRIME1 31 
+#define PRIME2 37
 long long int prime(long long int num,long long int** primearray)
 {
     long long int   count, c;
@@ -135,17 +135,12 @@ int main (int argc, char **argv)
 	res = pollard(in,bound,p,n);
 	if( res> 1 && res!=n)
 	{
-	printf("res= %lld\n",res);
 	// end=omp_get_wtime();
 	}
         MPI_Finalize();
     end=omp_get_wtime();
 	if(id==0)
-                printf("Total time taken =%f\n",end-start);
-                // printf("Total time start =%f\n",start);
-                // printf("Total time end =%f\n",end);
-	// free(h_primearray);
-    //     free(in);
+        printf("Total time taken =%f\n",(end-start));    
 	fflush(stdout);	
 	return 0;
 
