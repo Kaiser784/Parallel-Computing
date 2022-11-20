@@ -39,6 +39,10 @@ long long int prime(long long int num,long long int** primearray)
         for ( c = 2 ; c <= i - 1 ; c++ ) {
         if ( i%c == 0 )
         break;
+		for(int x = 0; i <1000; i++)
+		{
+
+		}
         }
         if ( c == i )
         {
